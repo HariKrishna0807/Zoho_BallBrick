@@ -104,6 +104,8 @@ while ball>0:
                 elif matrix[n_1][b]=="DE":
                     for bricks in range(1,n-1):
                         matrix[n_1][bricks]="0"
+                    matrix[n - 1][e] = "o"
+                    matrix[n - 1][b] = "G"
                     che = False
                     if e != b:
                         ball -= 1
@@ -121,6 +123,8 @@ while ball>0:
                     matrix[n_1][b - 1] = "0"
                     matrix[n_1][b] = "0"
                     matrix[n_1][b + 1] = "0"
+                    matrix[n - 1][e] = "o"
+                    matrix[n - 1][b] = "G"
                     che = False
                     if e != b:
                         ball -= 1
@@ -183,6 +187,8 @@ while ball>0:
                 elif matrix[n_1][b] == "DE":
                     for bricks in range(1, n - 1):
                         matrix[n_1][bricks] = "0"
+                    matrix[n - 1][e] = "o"
+                    matrix[n - 1][b] = "G"
                     che = False
                     if e != b:
                         ball -= 1
@@ -200,6 +206,8 @@ while ball>0:
                     matrix[n_1][b - 1] = "0"
                     matrix[n_1][b] = "0"
                     matrix[n_1][b + 1] = "0"
+                    matrix[n - 1][e] = "o"
+                    matrix[n - 1][b] = "G"
                     che = False
                     if e != b:
                         ball -= 1
